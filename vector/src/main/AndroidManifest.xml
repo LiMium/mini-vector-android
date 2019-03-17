@@ -25,10 +25,9 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <!-- videocall permissions
+    <!-- videocall permissions -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
--->
     <!-- required on android 6.0.0 devices -->
     <!--
     <uses-permission
@@ -70,12 +69,11 @@
         android:required="false"
         tools:replace="required" />
 
-    <!-- android.permission.RECORD_AUDIO defines android.hardware.microphone
+    <!-- android.permission.RECORD_AUDIO defines android.hardware.microphone -->
     <uses-feature
         android:name="android.hardware.microphone"
         android:required="false"
 	tools:replace="required" />
--->
 
     <!-- ShortcutBadger permissions
     <!- - for Samsung - ->
@@ -122,8 +120,8 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
-
  -->
+
 
     <application
         android:name=".VectorApp"

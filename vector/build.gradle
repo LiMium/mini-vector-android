@@ -281,7 +281,7 @@ dependencies {
     // implementation(name: 'react-native-immersive', ext: 'aar')
     // implementation(name: 'react-native-keep-awake', ext: 'aar')
     // implementation(name: 'react-native-vector-icons', ext: 'aar')
-    // implementation(name: 'react-native-webrtc', ext: 'aar')
+    implementation(name: 'react-native-webrtc', ext: 'aar')
     // implementation(name: 'react-native', ext: 'aar')
     // implementation(name: 'react-native-locale-detector', ext: 'aar')
 
