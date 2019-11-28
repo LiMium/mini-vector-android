@@ -24,16 +24,16 @@ import android.text.TextUtils;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.facebook.react.modules.core.PermissionListener;
+//import com.facebook.react.modules.core.PermissionListener;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.jitsi.meet.sdk.JitsiMeetActivityDelegate;
-import org.jitsi.meet.sdk.JitsiMeetActivityInterface;
-import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
-import org.jitsi.meet.sdk.JitsiMeetUserInfo;
-import org.jitsi.meet.sdk.JitsiMeetView;
-import org.jitsi.meet.sdk.JitsiMeetViewListener;
+//import org.jitsi.meet.sdk.JitsiMeetActivityDelegate;
+//import org.jitsi.meet.sdk.JitsiMeetActivityInterface;
+//import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
+//import org.jitsi.meet.sdk.JitsiMeetUserInfo;
+//import org.jitsi.meet.sdk.JitsiMeetView;
+//import org.jitsi.meet.sdk.JitsiMeetViewListener;
 import org.matrix.androidsdk.MXSession;
 import org.matrix.androidsdk.core.Log;
 import org.matrix.androidsdk.data.Room;
@@ -51,7 +51,7 @@ import im.vector.widgets.WidgetsManager;
 /**
  * Inspired from JitsiMeetActivity
  */
-public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiMeetActivityInterface {
+public class JitsiCallActivity extends VectorAppCompatActivity /* implements JitsiMeetActivityInterface */ {
     private static final String LOG_TAG = JitsiCallActivity.class.getSimpleName();
 
     /**
@@ -70,7 +70,7 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
     public static final String JITSI_SERVER_URL = "https://jitsi.riot.im/";
 
     // the jitsi view
-    private JitsiMeetView mJitsiView;
+    // private JitsiMeetView mJitsiView;
 
     // the linked widget
     private Widget mWidget = null;
@@ -143,7 +143,7 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
             return;
         }
 
-        mJitsiView = new JitsiMeetView(this);
+        // mJitsiView = new JitsiMeetView(this);
 
         loadURL();
     }
@@ -153,6 +153,7 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
      */
     private void loadURL() {
         try {
+            /*
             JitsiMeetUserInfo userInfo = new JitsiMeetUserInfo();
             userInfo.setDisplayName(mSession.getMyUser().displayname);
             try {
@@ -175,17 +176,21 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
                     .build();
 
             mJitsiView.join(jitsiMeetConferenceOptions);
+            */
         } catch (Exception e) {
             Log.e(LOG_TAG, "## join() failed : " + e.getMessage(), e);
             finish();
             return;
         }
 
+        /*
         FrameLayout.LayoutParams params
                 = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
 
         mJitsiContainer.addView(mJitsiView, 0, params);
+        */
 
+        /*
         mJitsiView.setListener(new JitsiMeetViewListener() {
 
             @Override
@@ -218,12 +223,14 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
                 });
             }
         });
+        */
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
+        /*
         if (null != mJitsiView) {
             ViewGroup parent = (ViewGroup) (mJitsiView.getParent());
 
@@ -237,19 +244,20 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
             mJitsiView.dispose();
             mJitsiView = null;
         }
+        */
 
-        JitsiMeetActivityDelegate.onHostDestroy(this);
+        // JitsiMeetActivityDelegate.onHostDestroy(this);
     }
 
     @Override
     public void onNewIntent(Intent intent) {
-        JitsiMeetActivityDelegate.onNewIntent(intent);
+        // JitsiMeetActivityDelegate.onNewIntent(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        JitsiMeetActivityDelegate.onHostPause(this);
+        //JitsiMeetActivityDelegate.onHostPause(this);
         WidgetsManager wm = getWidgetManager();
         if (wm != null) {
             wm.removeListener(mWidgetListener);
@@ -265,7 +273,7 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
     protected void onResume() {
         super.onResume();
 
-        JitsiMeetActivityDelegate.onHostResume(this);
+        //JitsiMeetActivityDelegate.onHostResume(this);
         WidgetsManager wm = getWidgetManager();
         if (wm != null) {
             wm.addListener(mWidgetListener);
@@ -279,7 +287,7 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
         if (widgetManagerProvider == null) return null;
         return widgetManagerProvider.getWidgetManager(this);
     }
-
+/*
     @Override
     public void onBackPressed() {
         JitsiMeetActivityDelegate.onBackPressed();
@@ -293,4 +301,5 @@ public class JitsiCallActivity extends VectorAppCompatActivity implements JitsiM
     public void requestPermissions(String[] permissions, int requestCode, PermissionListener listener) {
         JitsiMeetActivityDelegate.requestPermissions(this, permissions, requestCode, listener);
     }
+    */
 }
