@@ -247,7 +247,7 @@ dependencies {
     // use the matrix SDK as external dependency
     // implementation 'com.github.matrix-org:matrix-android-sdk:v0.9.32'
     // use the no-webrtc version
-    implementation 'com.github.Bubu:matrix-android-sdk:v0.9.32-no-webrtc'
+    implementation 'com.github.Bubu:matrix-android-sdk:v0.9.34-no-webrtc'
     // use the matrix SDK as a sub project
     // you have to uncomment some lines in settings.gradle
     //implementation project(':matrix-sdk')
