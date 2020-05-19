@@ -34,7 +34,7 @@
     <string name="missing_permissions_warning">En raison de permissions manquantes, certaines fonctionnalités peuvent être absentes…</string>
     <string name="missing_permissions_to_start_conf_call">Vous avez besoin de la permission d’invitation pour initier une téléconférence dans ce salon</string>
     <string name="missing_permissions_title_to_start_conf_call">Impossible d’initier l’appel</string>
-    <string name="device_information">Informations sur l’appareil</string>
+    <string name="device_information">Informations sur la session</string>
     <string name="room_no_conference_call_in_encrypted_rooms">Les téléconférences ne sont pas prises en charge dans les salons chiffrés</string>
     <string name="or">ou</string>
     <string name="invite">Inviter</string>
@@ -198,7 +198,7 @@
     <string name="room_participants_header_admin_tools">OUTILS DE L’ADMINISTRATEUR</string>
     <string name="room_participants_header_call">APPEL</string>
     <string name="room_participants_header_direct_chats">DISCUSSIONS DIRECTES</string>
-    <string name="room_participants_header_devices">APPAREILS</string>
+    <string name="room_participants_header_devices">SESSIONS</string>
 
     <string name="room_participants_action_invite">Inviter</string>
     <string name="room_participants_action_leave">Quitter ce salon</string>
@@ -209,7 +209,7 @@
     <string name="room_participants_action_set_moderator">Nommer modérateur</string>
     <string name="room_participants_action_set_admin">Nommer administrateur</string>
     <string name="room_participants_action_mention">Mentionner</string>
-    <string name="room_participants_action_devices_list">Afficher la liste des appareils</string>
+    <string name="room_participants_action_devices_list">Afficher la liste des sessions</string>
     <string name="people_search_local_contacts">CONTACTS LOCAUX (%d)</string>
     <string name="people_search_filter_text">Utilisateurs Matrix uniquement</string>
     <string name="people_search_invite_by_id_dialog_title">Inviter un utilisateur par son identifiant Matrix</string>
@@ -284,10 +284,10 @@
     <string name="settings_app_info_link_title">Informations sur l’application</string>
 
     <string name="settings_enable_all_notif">Activer les notifications pour ce compte</string>
-    <string name="settings_enable_this_device">Activer les notifications pour cet appareil</string>
+    <string name="settings_enable_this_device">Activer les notifications pour cette session</string>
     <string name="settings_messages_in_one_to_one">Messages dans les discussions directes</string>
     <string name="settings_messages_in_group_chat">Messages dans les discussions de groupe</string>
-    <string name="settings_call_invitations">Demandes d’appel</string>
+    <string name="settings_call_invitations">Appels entrants</string>
     <string name="settings_messages_sent_by_bot">Messages envoyés par un robot</string>
 
     <string name="settings_background_sync">Synchronisation en arrière-plan</string>
@@ -316,8 +316,8 @@
     <string name="settings_home_display">Page d’accueil</string>
     <string name="settings_pin_missed_notifications">Épingler les salons avec des notifications manquées</string>
     <string name="settings_pin_unread_messages">Épingler les salons avec des messages non lus</string>
-    <string name="settings_devices_list">Appareils</string>
-    <string name="devices_details_dialog_title">Informations de l’appareil</string>
+    <string name="settings_devices_list">Sessions</string>
+    <string name="devices_details_dialog_title">Informations de la session</string>
     <string name="devices_details_id_title">Identifiant</string>
     <string name="devices_details_name_title">Nom public</string>
     <string name="devices_details_device_name">Mettre à jour le nom public</string>
@@ -367,7 +367,7 @@
     <string name="room_settings_labs_pref_title">Expérimental</string>
     <string name="room_settings_labs_end_to_end">Chiffrement de bout en bout</string>
     <string name="room_settings_labs_end_to_end_is_active">Le chiffrement de bout en bout est actif</string>
-    <string name="room_settings_never_send_to_unverified_devices_title">Chiffrer uniquement pour les appareils vérifiés</string>
+    <string name="room_settings_never_send_to_unverified_devices_title">Chiffrer uniquement pour les sessions vérifiées</string>
     <string name="room_settings_addresses_add_new_address">Nouvelle adresse (par exemple #foo:matrix.org)</string>
 
     <string name="room_settings_addresses_invalid_format_dialog_title">Format d’alias invalide</string>
@@ -390,11 +390,11 @@
     <string name="encryption_information_session_id">Identifiant de session</string>
     <string name="encryption_information_decryption_error">Erreur de déchiffrement</string>
 
-    <string name="encryption_information_sender_device_information">Informations sur l’appareil de l’expéditeur</string>
+    <string name="encryption_information_sender_device_information">Informations sur la session de l’expéditeur</string>
     <string name="encryption_information_device_name">Nom public</string>
     <string name="encryption_information_name">Nom public</string>
     <string name="encryption_information_device_id">Identifiant</string>
-    <string name="encryption_information_device_key">Clé de l’appareil</string>
+    <string name="encryption_information_device_key">Clé de la session</string>
     <string name="encryption_information_verification">Vérification</string>
     <string name="encryption_information_ed25519_fingerprint">Empreinte Ed25519</string>
 
@@ -406,12 +406,12 @@
     <string name="encryption_import_e2e_room_keys">Importer les clés E2E des salons</string>
     <string name="encryption_import_room_keys">Importer les clés des salons</string>
     <string name="encryption_import_import">Importer</string>
-    <string name="encryption_never_send_to_unverified_devices_title">Chiffrer uniquement vers les appareils vérifiés</string>
+    <string name="encryption_never_send_to_unverified_devices_title">Chiffrer uniquement vers les sessions vérifiées</string>
     <string name="encryption_information_not_verified">NON vérifié</string>
     <string name="encryption_information_verified">Vérifié</string>
     <string name="encryption_information_blocked">Sur liste noire</string>
 
-    <string name="encryption_information_unknown_device">appareil inconnu</string>
+    <string name="encryption_information_unknown_device">session inconnue</string>
     <string name="encryption_information_none">aucun</string>
 
     <string name="encryption_information_verify">Vérifier</string>
@@ -419,7 +419,7 @@
     <string name="encryption_information_block">Ajouter à la liste noire</string>
     <string name="encryption_information_unblock">Supprimer de la liste noire</string>
 
-    <string name="encryption_information_verify_device">Vérifier l’appareil</string>
+    <string name="encryption_information_verify_device">Vérifier la session</string>
     <string name="select_room_directory">Sélectionner un répertoire de salons</string>
     <string name="directory_server_placeholder">URL du serveur d’accueil</string>
     <string name="directory_server_all_rooms_on_server">Tous les salons sur le serveur %s</string>
@@ -445,8 +445,8 @@
     <string name="auth_email_already_defined">Cette adresse e-mail est déjà utilisée.</string>
     <string name="auth_email_validation_message">Veuillez vérifier votre e-mail pour continuer votre inscription</string>
     <string name="auth_threepid_warning_message">L’inscription avec e-mail et numéro de téléphone à la fois n’est pas prise en charge tant que l’API n’existe pas. Seul le numéro de téléphone sera pris en compte.
-
-Vous pouvez ajouter votre adresse e-mail à votre profil dans les paramètres.</string>
+\n
+\nVous pouvez ajouter votre adresse e-mail à votre profil dans les paramètres.</string>
     <string name="auth_recaptcha_message">Ce serveur d’accueil souhaite s’assurer que vous n’êtes pas un robot</string>
     <string name="auth_reset_password_next_step_button">J’ai vérifié mon adresse e-mail</string>
     <string name="auth_reset_password_message">Pour réinitialiser votre mot de passe, saisissez l’adresse e-mail associée à votre compte :</string>
@@ -455,8 +455,8 @@ Vous pouvez ajouter votre adresse e-mail à votre profil dans les paramètres.</
     <string name="auth_reset_password_email_validation_message">Un e-mail a été envoyé à %s. Une fois que vous aurez suivi le lien qu’il contient, cliquez ci-dessous.</string>
     <string name="auth_reset_password_error_unauthorized">Impossible de vérifier l’adresse e-mail : assurez-vous d’avoir cliqué sur le lien dans l’e-mail</string>
     <string name="auth_reset_password_success_message">Votre mot de passe a été réinitialisé.
-
-Vous avez été déconnecté de tous les appareils et ne recevrez plus de notifications. Pour réactiver les notifications, reconnectez-vous sur chaque appareil.</string>
+\n
+\nVous avez été déconnecté de toutes les sessions et ne recevrez plus de notifications. Pour réactiver les notifications, reconnectez-vous sur chaque appareil.</string>
 
     <string name="login_error_must_start_http">L’URL doit commencer par http[s]://</string>
     <string name="login_error_network_error">Impossible de se connecter : erreur réseau</string>
@@ -467,9 +467,9 @@ Vous avez été déconnecté de tous les appareils et ne recevrez plus de notifi
     <string name="login_error_user_in_use">Ce nom d’utilisateur est déjà utilisé</string>
     <string name="login_error_login_email_not_yet">Vous n’avez pas encore cliqué sur le lien dans l’e-mail</string>
 
-    <string name="e2e_need_log_in_again">Vous devez vous identifier à nouveau pour générer des clés de chiffrement de bout en bout pour cet appareil et envoyer la clé publique à votre serveur d’accueil.
-Il s’agit d’une erreur exceptionnelle.
-Veuillez nous excuser pour ce désagrément.</string>
+    <string name="e2e_need_log_in_again">Vous devez vous identifier à nouveau pour générer des clés de chiffrement de bout en bout pour cette session et envoyer la clé publique à votre serveur d’accueil.
+\nCeci ne se produira qu’une fois.
+\nVeuillez nous excuser pour ce désagrément.</string>
 
     <string name="attachment_cancel_upload">Annuler l’envoi ?</string>
     <string name="attachment_remaining_time_seconds">%d s</string>
@@ -528,7 +528,7 @@ En êtes-vous sûr(e) ?</string>
     <string name="room_many_users_are_typing">%1$s, %2$s et d’autres écrivent…</string>
     <string name="room_offline_notification">La connexion au serveur a été perdue.</string>
     <string name="room_unsent_messages_notification">Messages non envoyés. %1$s ou %2$s maintenant ?</string>
-    <string name="room_unknown_devices_messages_notification">Messages non envoyés car des appareils inconnus sont présents. %1$s ou %2$s maintenant ?</string>
+    <string name="room_unknown_devices_messages_notification">Messages non envoyés car des sessions inconnues sont présentes. %1$s ou %2$s maintenant \?</string>
     <string name="room_do_not_have_permission_to_post">Vous n’avez pas le droit de poster dans ce salon</string>
 
     <string name="ssl_fingerprint_hash">Empreinte (%s) :</string>
@@ -550,7 +550,7 @@ Veuillez noter que cette action redémarrera l’application et pourra prendre u
     <string name="settings_user_settings">Paramètres utilisateur</string>
     <string name="devices_details_last_seen_format">%1$s @ %2$s</string>
     <string name="devices_delete_dialog_text">Cette opération nécessite de s’authentifier à nouveau.
-Pour continuer, veuillez saisir votre mot de passe.</string>
+\nPour continuer, veuillez saisir votre mot de passe.</string>
     <string name="account_email_validation_message">Vérifiez votre e-mail et cliquez sur le lien qu’il contient. Une fois cela fait, cliquez sur continuer.</string>
     <string name="account_email_validation_error">Impossible de vérifier l’adresse e-mail. Vérifiez vos e-mails et cliquez sur le lien qui a été envoyé. Ensuite, cliquez sur continuer.</string>
 
@@ -576,12 +576,12 @@ Veuillez noter que cette action redémarrera l’application et pourra prendre u
     <string name="room_settings_read_history_entry_members_only_invited">Uniquement les membres (depuis leur invitation)</string>
     <string name="room_settings_room_access_warning">Pour faire référence à un salon, il doit avoir une adresse.</string>
     <string name="room_settings_room_access_entry_only_invited">Seules les personnes qui ont été invitées</string>
-    <string name="room_settings_room_access_entry_anyone_with_link_apart_guest">Tous ceux qui connaissent le lien du salon, à part les invités</string>
-    <string name="room_settings_room_access_entry_anyone_with_link_including_guest">Tous ceux qui connaissent le lien du salon, y compris les invités</string>
+    <string name="room_settings_room_access_entry_anyone_with_link_apart_guest">Tous ceux qui connaissent le lien du salon, à part les visiteurs</string>
+    <string name="room_settings_room_access_entry_anyone_with_link_including_guest">Tous ceux qui connaissent le lien du salon, y compris les visiteurs</string>
 
     <string name="room_settings_labs_warning_message">Ce sont des fonctionnalités expérimentales qui peuvent se comporter de façon inattendue. À utiliser avec précaution.</string>
     <string name="room_settings_labs_end_to_end_warnings">Vous devez vous déconnecter pour pouvoir activer le chiffrement.</string>
-    <string name="room_settings_never_send_to_unverified_devices_summary">Ne jamais envoyer de message chiffré aux appareils non vérifiés sur ce salon, depuis cet appareil.</string>
+    <string name="room_settings_never_send_to_unverified_devices_summary">Ne jamais envoyer de message chiffré aux sessions non vérifiées sur ce salon, depuis cette session.</string>
 
     <string name="room_settings_addresses_no_local_addresses">Ce salon n’a pas d’adresse locale</string>
     <string name="room_settings_addresses_invalid_format_dialog_body">"\"%s\"  n’est pas un format valide pour un alias"</string>
@@ -600,22 +600,22 @@ Veuillez noter que cette action redémarrera l’application et pourra prendre u
 Attention : ce fichier peut être supprimé si l’application est désinstallée.</string>
 
     <string name="encryption_import_room_keys_summary">Importer les clés à partir d’un fichier local</string>
-    <string name="encryption_never_send_to_unverified_devices_summary">Ne jamais envoyer de messages chiffrés aux appareils non vérifiés depuis cet appareil.</string>
+    <string name="encryption_never_send_to_unverified_devices_summary">Ne jamais envoyer de messages chiffrés aux sessions non vérifiées depuis cette session.</string>
 
-    <string name="encryption_information_verify_device_warning">Pour vérifier que cet appareil est de confiance, contactez son propriétaire en utilisant un autre moyen (par exemple en personne ou par téléphone) et demandez-lui si la clé qu’il voit dans ses paramètres utilisateur pour cet appareil correspond à la clé ci-dessous :</string>
-    <string name="encryption_information_verify_device_warning2">Si elle correspond, appuyez sur le bouton Vérifier ci-dessous. Si ce n’est pas le cas, quelqu’un d’autre intercepte cet appareil et vous devriez probablement le bloquer. À l’avenir, ce processus de vérification sera plus évolué.</string>
+    <string name="encryption_information_verify_device_warning">Pour vérifier que cette session est fiable, contactez son propriétaire en utilisant un autre moyen (par ex. en personne ou par téléphone) et demandez-lui si la clé qu’il voit dans ses paramètres utilisateur pour cette session correspond à la clé ci-dessous :</string>
+    <string name="encryption_information_verify_device_warning2">Si elle correspond, appuyez sur le bouton « Vérifier » ci-dessous. Si ce n’est pas le cas, quelqu’un d’autre intercepte cette session et vous devriez probablement le bloquer. À l’avenir, ce processus de vérification sera plus évolué.</string>
     <string name="encryption_information_verify_key_match">Je confirme que les clés correspondent</string>
 
     <string name="e2e_enabling_on_app_update">Riot prend désormais en charge le chiffrement de bout en bout, mais vous devez vous reconnecter pour l’activer.
 
 Vous pouvez le faire maintenant ou plus tard à partir des paramètres de l’application.</string>
 
-    <string name="unknown_devices_alert_title">Le salon contient des appareils inconnus</string>
-    <string name="unknown_devices_alert_message">Ce salon contient des appareils inconnus, qui n’ont pas été vérifiés.
-Cela signifie qu’il n’y a aucune garantie que les appareils appartiennent aux utilisateurs qu’ils prétendent.
-Nous vous recommandons d’effectuer le processus de vérification pour chaque appareil avant de continuer, mais vous pouvez renvoyer le message sans vérifier si vous préférez.
-
-Appareils inconnus :</string>
+    <string name="unknown_devices_alert_title">Le salon contient des sessions inconnues</string>
+    <string name="unknown_devices_alert_message">Ce salon contient des sessions inconnues, qui n’ont pas été vérifiées.
+\nCela signifie qu’il n’y a aucune garantie que les sessions appartiennent aux utilisateurs qu’elles prétendent.
+\nNous vous recommandons d’effectuer le processus de vérification pour chaque session avant de continuer, mais vous pouvez renvoyer le message sans vérifier si vous préférez.
+\n
+\nSessions inconnues :</string>
 
     <string name="directory_server_fail_to_retrieve_server">Le serveur est peut-être indisponible ou surchargé</string>
     <string name="directory_server_type_homeserver">Saisir un serveur d’accueil pour lister ses salons publics</string>
@@ -687,8 +687,8 @@ Appareils inconnus :</string>
     <string name="call">Appel</string>
     <string name="settings_containing_my_display_name">Messages contenant mon nom affiché</string>
     <string name="settings_containing_my_user_name">Messages contenant mon nom d’utilisateur</string>
-    <string name="you_added_a_new_device">Vous avez ajouté un nouvel appareil \"%s\", qui demande les clés de chiffrement.</string>
-    <string name="your_unverified_device_requesting">Votre appareil non vérifié \"%s\" demande les clés de chiffrement.</string>
+    <string name="you_added_a_new_device">Vous avez ajouté une nouvelle session « %s », qui demande les clés de chiffrement.</string>
+    <string name="your_unverified_device_requesting">Votre session non vérifiée « %s » demande les clés de chiffrement.</string>
     <string name="start_verification">Commencer la vérification</string>
     <string name="share_without_verifying">Partager sans vérifier</string>
     <string name="ignore_request">Ignorer la demande</string>
@@ -766,7 +766,7 @@ Appareils inconnus :</string>
     <string name="group_details_home">Accueil</string>
     <string name="group_details_people">Personnes</string>
     <string name="group_details_rooms">Salons</string>
-    <string name="no_users_placeholder">Pas d’utilisateurs</string>
+    <string name="no_users_placeholder">Pas d’utilisateur</string>
 
     <string name="rooms">Salons</string>
     <string name="joined">Rejoint</string>
@@ -875,11 +875,11 @@ Voulez-vous en ajouter ?</string>
     <string name="dialog_user_consent_submit">Voir maintenant</string>
 
     <string name="deactivate_account_title">Désactiver le compte</string>
-    <string name="deactivate_account_content">Votre compte sera inutilisable de façon permanente. Vous ne pourrez plus vous connecter et personne ne pourra se réenregistrer avec le même identifiant d’utilisateur. Le compte quittera tous les salons auxquels il participe et tous ses détails seront supprimés du serveur d’identité. <b>Cette action est irréversible. </b>
-
-Désactiver votre compte <b>ne nous fait pas oublier les messages que vous avez envoyés par défaut</b>. Si vous souhaitez que nous oubliions vos messages, cochez la case ci-dessous.
-
-La visibilité des messages dans Matrix est identique à celle des e-mails. Si nous oublions vos messages, cela signifie que les messages que vous avez envoyés ne seront plus partagés avec les nouveaux utilisateurs ou les utilisateurs non enregistrés, mais les utilisateurs enregistrés qui ont déjà accès à ces messages en conserveront leur copie.</string>
+    <string name="deactivate_account_content">\"Votre compte sera inutilisable de façon permanente. Vous ne pourrez plus vous connecter et personne ne pourra se réenregistrer avec le même identifiant d’utilisateur. Le compte quittera tous les salons auxquels il participe et tous ses détails seront supprimés du serveur d’identité. <b>Cette action est irréversible.</b>
+\n
+\nDésactiver votre compte <b>ne nous fait pas oublier les messages que vous avez envoyés par défaut</b>. Si vous souhaitez que nous oubliions vos messages, cochez la case ci-dessous.
+\n
+\nLa visibilité des messages dans Matrix est identique à celle des e-mails. Si nous oublions vos messages, cela signifie que les messages que vous avez envoyés ne seront plus partagés avec les nouveaux utilisateurs ou les utilisateurs non enregistrés, mais les utilisateurs enregistrés qui ont déjà accès à ces messages en conserveront leur copie.\"</string>
     <string name="deactivate_account_delete_checkbox">Veuillez oublier tous les messages que j’ai envoyé quand mon compte sera désactivé (Avertissement : les futurs utilisateurs verront une version incomplète des conversations)</string>
     <string name="deactivate_account_prompt_password">Pour continuer, veuillez renseigner votre mot de passe :</string>
     <string name="deactivate_account_submit">Désactiver le compte</string>
@@ -889,12 +889,12 @@ La visibilité des messages dans Matrix est identique à celle des e-mails. Si n
     <string name="download">Télécharger</string>
     <string name="speak">Parler</string>
     <string name="clear">Effacer</string>
-    <string name="e2e_re_request_encryption_key"><u>Redemander les clés de chiffrement</u> à vos autres appareils.</string>
+    <string name="e2e_re_request_encryption_key">Redemander les clés de chiffrement à vos autres sessions.</string>
 
     <string name="e2e_re_request_encryption_key_sent">Demande de clé envoyée.</string>
 
     <string name="e2e_re_request_encryption_key_dialog_title">Demande envoyée</string>
-    <string name="e2e_re_request_encryption_key_dialog_content">Veuillez lancer Riot sur un autre appareil qui peut déchiffrer le message pour qu’il puisse envoyer les clés à cet appareil.</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Veuillez lancer Riot sur un autre appareil qui peut déchiffrer le message pour qu’il puisse envoyer les clés à cette session.</string>
 
     <string name="lock_screen_hint">Tapez ici…</string>
 
@@ -1060,7 +1060,7 @@ Veuillez noter que cette action redémarrera l’application et pourra prendre u
     <string name="settings_troubleshoot_diagnostic">Diagnostics de résolution de problème</string>
     <string name="settings_troubleshoot_diagnostic_run_button_title">Lancer les tests</string>
     <string name="settings_troubleshoot_diagnostic_running_status">"Exécution…  (%1$d sur %2$d)"</string>
-    <string name="settings_troubleshoot_diagnostic_success_status">Le diagnostic de base est passé. Si vous ne recevez toujours pas de notifications, veuillez envoyer un rapport d’anomalie pour nous aider à résoudre le problème.</string>
+    <string name="settings_troubleshoot_diagnostic_success_status">Le diagnostic de base est passé. Si vous ne recevez toujours pas de notifications, envoyez un rapport d’anomalie pour nous aider à résoudre le problème.</string>
     <string name="settings_troubleshoot_diagnostic_failure_status_with_quickfix">Au moins un test a échoué, essayez les solutions suggérées.</string>
     <string name="settings_troubleshoot_diagnostic_failure_status_no_quickfix">Au moins un test a échoué, veuillez envoyer un rapport d’anomalie pour nous aider à résoudre le problème.</string>
 
@@ -1076,10 +1076,10 @@ Veuillez vérifier les paramètres système.</string>
 Veuillez vérifier les paramètres du compte.</string>
     <string name="settings_troubleshoot_test_account_settings_quickfix">Activer</string>
 
-    <string name="settings_troubleshoot_test_device_settings_title">Paramètres de l’appareil.</string>
-    <string name="settings_troubleshoot_test_device_settings_success">Les notifications sont activées pour cet appareil.</string>
-    <string name="settings_troubleshoot_test_device_settings_failed">Les notifications ne sont pas activées pour cet appareil.
-Veuillez vérifier les paramètres de Riot.</string>
+    <string name="settings_troubleshoot_test_device_settings_title">Paramètres de la session.</string>
+    <string name="settings_troubleshoot_test_device_settings_success">Les notifications sont activées pour cette session.</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Les notifications ne sont pas activées pour cette session.
+\nVeuillez vérifier les paramètres de Riot.</string>
     <string name="settings_troubleshoot_test_device_settings_quickfix">Activer</string>
 
     <string name="settings_troubleshoot_test_play_services_title">Vérification des services Google Play</string>
@@ -1247,14 +1247,14 @@ Attention : ce fichier pourrait être supprimé si l’application est désinsta
     <string name="keys_backup_recovery_code_error_decrypt">La sauvegarde n’a pas pu être déchiffrée avec cette clé de récupération : veuillez vérifier que vous avez saisi la bonne clé de récupération.</string>
 
     <string name="keys_backup_restore_success_title">Sauvegarde restaurée %s !</string>
-    <string name="keys_backup_restore_success_description">%1$d clés de session restaurées et %2$d nouvelles clés ajoutées qui étaient inconnues à cet appareil</string>
+    <string name="keys_backup_restore_success_description">%1$d clés de session restaurées et %2$d nouvelles clés ajoutées qui étaient inconnues à cette session</string>
     <plurals name="keys_backup_restore_success_description_part1">
         <item quantity="one">Sauvegarde restaurée avec %d clé.</item>
         <item quantity="other">Sauvegarde restaurée avec %d clés.</item>
     </plurals>
     <plurals name="keys_backup_restore_success_description_part2">
-        <item quantity="one">%d nouvelle clé a été ajoutée à cet appareil.</item>
-        <item quantity="other">%d nouvelles clés ont été ajoutées à cet appareil.</item>
+        <item quantity="one">%d nouvelle clé a été ajoutée à cette session.</item>
+        <item quantity="other">%d nouvelles clés ont été ajoutées à cette session.</item>
     </plurals>
 
     <string name="keys_backup_get_version_error">Échec de récupération de la dernière version des clés de récupération (%s).</string>
@@ -1264,17 +1264,17 @@ Attention : ce fichier pourrait être supprimé si l’application est désinsta
     <string name="keys_backup_settings_restore_backup_button">Restaurer depuis la sauvegarde</string>
     <string name="keys_backup_settings_delete_backup_button">Supprimer la sauvegarde</string>
 
-    <string name="keys_backup_settings_status_ok">La sauvegarde de clés a été correctement configurée pour cet appareil.</string>
-    <string name="keys_backup_settings_status_ko">La sauvegarde de clés n’est pas activée sur cet appareil.</string>
-    <string name="keys_backup_settings_status_not_setup">Vos clés ne sont pas sauvegardées depuis cet appareil.</string>
+    <string name="keys_backup_settings_status_ok">La sauvegarde de clés a été correctement configurée pour cette session.</string>
+    <string name="keys_backup_settings_status_ko">La sauvegarde de clés n’est pas activée sur cette session.</string>
+    <string name="keys_backup_settings_status_not_setup">Vos clés ne sont pas sauvegardées depuis cette session.</string>
 
 
-    <string name="keys_backup_settings_signature_from_unknown_device">La sauvegarde a une signature d’un appareil inconnu ayant pour identifiant %s.</string>
-    <string name="keys_backup_settings_valid_signature_from_this_device">La sauvegarde a une signature valide de cet appareil.</string>
-    <string name="keys_backup_settings_valid_signature_from_verified_device">La sauvegarde a une signature valide de l’appareil vérifié %s.</string>
-    <string name="keys_backup_settings_valid_signature_from_unverified_device">La sauvegarde a une signature valide de l’appareil non vérifié %s</string>
-    <string name="keys_backup_settings_invalid_signature_from_verified_device">La sauvegarde a une signature non valide de l’appareil vérifié %s</string>
-    <string name="keys_backup_settings_invalid_signature_from_unverified_device">La sauvegarde a une signature non valide de l’appareil non vérifié %s</string>
+    <string name="keys_backup_settings_signature_from_unknown_device">La sauvegarde a une signature d’une session inconnue ayant pour identifiant %s.</string>
+    <string name="keys_backup_settings_valid_signature_from_this_device">La sauvegarde a une signature valide de cette session.</string>
+    <string name="keys_backup_settings_valid_signature_from_verified_device">La sauvegarde a une signature valide de la session vérifiée %s.</string>
+    <string name="keys_backup_settings_valid_signature_from_unverified_device">La sauvegarde a une signature valide de la session non vérifiée %s</string>
+    <string name="keys_backup_settings_invalid_signature_from_verified_device">La sauvegarde a une signature non valide de la session vérifiée %s</string>
+    <string name="keys_backup_settings_invalid_signature_from_unverified_device">La sauvegarde a une signature non valide de la session non vérifiée %s</string>
     <string name="keys_backup_get_trust_error">Échec de la récupération des informations de confiance de la sauvegarde (%s).</string>
 
     <string name="keys_backup_settings_deleting_backup">Suppression de la sauvegarde…</string>
@@ -1285,7 +1285,7 @@ Attention : ce fichier pourrait être supprimé si l’application est désinsta
 
     <string name="sign_out_bottom_sheet_warning_no_backup">Vous perdrez vos messages chiffrés si vous vous déconnectez maintenant</string>
     <string name="sign_out_bottom_sheet_warning_backing_up">Sauvegarde de clés en cours. Si vous vous déconnectez maintenant, vous perdrez accès à vos messages chiffrés.</string>
-    <string name="sign_out_bottom_sheet_warning_backup_not_active">La sauvegarde de clés sécurisées devrait être activée sur tous vos appareils pour éviter de perdre l’accès à vos messages chiffrés.</string>
+    <string name="sign_out_bottom_sheet_warning_backup_not_active">La sauvegarde de clés sécurisées devrait être activée pour toutes vos sessions afin d’éviter de perdre l’accès à vos messages chiffrés.</string>
     <string name="sign_out_bottom_sheet_dont_want_secure_messages">Je ne veux pas de mes messages chiffrés</string>
     <string name="sign_out_bottom_sheet_backing_up_keys">Sauvegarde de clés…</string>
     <string name="keys_backup_activate">Utiliser la sauvegarde de clés</string>
@@ -1325,7 +1325,7 @@ Conservez votre clé de récupération en lieu sûr, comme un gestionnaire de mo
     <string name="keys_backup_banner_recover_line1">Ne perdez jamais vos messages chiffrés</string>
     <string name="keys_backup_banner_recover_line2">Utiliser la sauvegarde de clés</string>
 
-    <string name="keys_backup_banner_update_line1">Nouvelles clés de messages chiffrés</string>
+    <string name="keys_backup_banner_update_line1">Nouvelles clés de message sécurisé</string>
     <string name="keys_backup_banner_update_line2">Gérer la sauvegarde de clés</string>
 
     <string name="keys_backup_banner_in_progress">Sauvegarde de clés…</string>
@@ -1340,7 +1340,7 @@ Conservez votre clé de récupération en lieu sûr, comme un gestionnaire de mo
     <string name="keys_backup_info_title_algorithm">Algorithme</string>
     <string name="keys_backup_info_title_signature">Signature</string>
 
-    <string name="keys_backup_settings_untrusted_backup">Pour utiliser la sauvegarde de clés sur cet appareil, faites une restauration avec votre phrase secrète ou votre clé de récupération.</string>
+    <string name="keys_backup_settings_untrusted_backup">Pour utiliser la sauvegarde de clés sur cette session, faites une restauration avec votre phrase secrète ou votre clé de récupération.</string>
     <string name="new_recovery_method_popup_title">Nouvelle sauvegarde de clés</string>
     <string name="new_recovery_method_popup_description">Une nouvelle sauvegarde de clés de messages sécurisés a été détectée.
 
@@ -1395,17 +1395,17 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
 
     <string name="error_jitsi_not_supported_on_old_device">Désolé, les appels en visioconférence avec Jitsi ne sont pas pris en charge sur les vieux appareils (avec une version d\'Android antérieure à 5.0)</string>
 
-    <string name="title_activity_verify_device">Vérifier l’appareil</string>
+    <string name="title_activity_verify_device">Vérifier la session</string>
 
     <string name="encryption_information_unknown_ip">adresse IP inconnue</string>
-    <string name="you_added_a_new_device_with_info">Un nouvel appareil demande les clés de chiffrement.
-\nNom de l’appareil : %1$s
+    <string name="you_added_a_new_device_with_info">Une nouvelle session demande les clés de chiffrement.
+\nNom de la session : %1$s
 \nVu : %2$s
-\nSi vous ne vous êtes pas connecté sur un autre appareil, ignorez cette demande.</string>
-    <string name="your_unverified_device_requesting_with_info">Un appareil non vérifié demande les clés de chiffrement.
-\nNom de l’appareil : %1$s
+\nSi vous ne vous êtes pas connecté à une autre session, ignorez cette demande.</string>
+    <string name="your_unverified_device_requesting_with_info">Une session non vérifiée demande les clés de chiffrement.
+\nNom de la session : %1$s
 \nVu : %2$s
-\nSi vous ne vous êtes pas connecté sur un autre appareil, ignorez cette demande.</string>
+\nSi vous ne vous êtes pas connecté à une autre session, ignorez cette demande.</string>
 
     <string name="start_verification_short_label">Vérifier</string>
     <string name="share_without_verifying_short_label">Partager</string>
@@ -1416,18 +1416,18 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="sas_security_advise">Pour une sécurité maximale, nous vous recommandons de faire cela en personne ou d’utiliser d’autres moyens de communication sécurisés.</string>
     <string name="sas_verify_start_button_title">Commencer la vérification</string>
     <string name="sas_incoming_request_title">Demande de vérification entrante</string>
-    <string name="sas_incoming_request_description">Vérifiez cet appareil pour le marquer comme fiable. Faire confiance aux appareils de vos partenaires vous permet d’être plus serein en utilisant les messages chiffrés de bout en bout.</string>
-    <string name="sas_incoming_request_description_2">La vérification de cet appareil le marquera comme fiable, et marquera aussi votre appareil comme fiable auprès de votre partenaire.</string>
+    <string name="sas_incoming_request_description">Vérifiez cette session pour la marquer comme fiable. Faire confiance aux sessions de vos partenaires vous permet d’être plus serein en utilisant les messages chiffrés de bout en bout.</string>
+    <string name="sas_incoming_request_description_2">La vérification de cette session la marquera comme fiable, et marquera aussi votre session comme fiable pour votre partenaire.</string>
 
-    <string name="sas_emoji_description">Vérifiez cet appareil en confirmant que les émojis suivant apparaissent sur l’écran de votre partenaire</string>
-    <string name="sas_decimal_description">Vérifiez cet appareil en confirmant que les chiffres suivants apparaissent sur l’écran de votre partenaire</string>
+    <string name="sas_emoji_description">Vérifiez cette session en confirmant que les émojis suivants apparaissent sur l’écran de votre partenaire</string>
+    <string name="sas_decimal_description">Vérifiez cette session en confirmant que les chiffres suivants apparaissent sur l’écran de votre partenaire</string>
 
     <string name="sas_incoming_verification_request_dialog">Vous avez reçu une demande de vérification entrante.</string>
     <string name="sas_view_request_action">Voir la demande</string>
     <string name="sas_waiting_for_partner">Attente de la confirmation du partenaire…</string>
 
     <string name="sas_verified">Vérifié !</string>
-    <string name="sas_verified_successful">Vous avez bien vérifié cet appareil.</string>
+    <string name="sas_verified_successful">Vous avez bien vérifié cette session.</string>
     <string name="sas_verified_successful_description">Les messages sécurisés avec cet utilisateur sont chiffrés de bout en bout et ne peuvent être lus par des tiers.</string>
     <string name="sas_got_it">Compris</string>
 
@@ -1441,17 +1441,17 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="sas_cancelled_by_me">La vérification est annulée.
 \nMotif : %s</string>
 
-    <string name="sas_verification_request_notification_channel">Vérification d’appareil interactive</string>
+    <string name="sas_verification_request_notification_channel">Vérification de session interactive</string>
     <string name="sas_incoming_request_notif_title">Demande de vérification</string>
-    <string name="sas_incoming_request_notif_content">%s veut vérifier votre appareil</string>
+    <string name="sas_incoming_request_notif_content">%s veut vérifier votre session</string>
 
     <string name="sas_error_m_user">L’utilisateur a annulé la vérification</string>
     <string name="sas_error_m_timeout">Le processus de vérification a expiré</string>
-    <string name="sas_error_m_unknown_transaction">L’appareil n’est pas au courant de cette transaction</string>
-    <string name="sas_error_m_unknown_method">L’appareil ne peut pas s’accorder sur une méthode de concordance, de hachage, de MAC ou de SAS de clé</string>
+    <string name="sas_error_m_unknown_transaction">La session n’est pas au courant de cette transaction</string>
+    <string name="sas_error_m_unknown_method">La session ne peut pas s’accorder sur une méthode de concordance, de hachage, de MAC ou de SAS de clé</string>
     <string name="sas_error_m_mismatched_commitment">L’engagement de hachage ne correspond pas</string>
     <string name="sas_error_m_mismatched_sas">Le SAS ne correspond pas</string>
-    <string name="sas_error_m_unexpected_message">L’appareil a reçu un message inattendu</string>
+    <string name="sas_error_m_unexpected_message">La session a reçu un message inattendu</string>
     <string name="sas_error_m_invalid_message">Un message non valide a été reçu</string>
     <string name="sas_error_m_key_mismatch">Non-concordance de clé</string>
     <string name="sas_error_m_user_error">Non-concordance d’utilisateur</string>
@@ -1464,159 +1464,12 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="keys_backup_settings_checking_backup_state">Vérification de l’état de la sauvegarde</string>
     <string name="invalid_or_expired_credentials">Vous avez été déconnecté(e) car vos identifiants sont incorrects ou ont expiré.</string>
 
-    <string name="edit">Éditer</string>
-    <string name="reply">Répondre</string>
 
     <string name="global_retry">Réessayer</string>
-    <string name="send_you_invite">Vous a envoyé une invitation</string>
-    <string name="invited_by">Invité(e) par %s</string>
-
-    <string name="room_list_catchup_empty_title">Vous êtes à jour !</string>
-    <string name="room_list_catchup_empty_body">Vous n’avez plus de messages non lus</string>
-    <string name="room_list_people_empty_title">Discussions</string>
-    <string name="change_room_directory_network">Changer de réseau</string>
-    <string name="please_wait">Veuillez patienter…</string>
-    <string name="keys_backup_setup_override_backup_prompt_description">On dirait que vous avez déjà configuré une sauvegarde de clé depuis un autre appareil. Voulez-vous la remplacer par celle que vous êtes en train de créer \?</string>
-    <string name="room_list_empty">Rejoignez un salon pour commencer à utiliser l’application.</string>
-    <string name="room_list_catchup_welcome_title">Bienvenue chez vous !</string>
-    <string name="room_list_catchup_welcome_body">Rattrapez votre retard sur vos messages non lus ici</string>
-    <string name="room_list_people_empty_body">Vos conversations directes seront affichées ici</string>
-    <string name="room_list_rooms_empty_title">Salons</string>
-    <string name="room_list_rooms_empty_body">Vos salons seront affichés ici</string>
-
-    <string name="title_activity_emoji_reaction_picker">Réactions</string>
-    <string name="reactions_agree">D’accord</string>
-    <string name="reactions_like">J’aime</string>
-    <string name="message_add_reaction">Ajouter une réaction</string>
-    <string name="message_view_reaction">Voir les réactions</string>
-    <string name="reactions">Réactions</string>
-
-    <string name="event_redacted_by_user_reason">Évènement supprimé par l’utilisateur</string>
-    <string name="event_redacted_by_admin_reason">Évènement modéré par l’administrateur du salon</string>
-    <string name="last_edited_info_message">Dernière édition par %1$s le %2$s</string>
-
-
-    <string name="malformed_message">Évènement malformé, affichage impossible</string>
-    <string name="create_new_room">Créer un nouveau salon</string>
-    <string name="error_no_network">Aucun réseau. Vérifiez votre connexion Internet.</string>
-    <string name="action_change">Changer</string>
-    <string name="group_all_communities">Toutes les communautés</string>
-
-    <string name="room_preview_no_preview">Impossible d’avoir un aperçu de ce salon</string>
-    <string name="room_preview_world_readable_room_not_supported_yet">L’aperçu des salons visibles par tout le monde n’est pas encore pris en charge par RiotX</string>
-
-    <string name="fab_menu_create_room">Salons</string>
-    <string name="fab_menu_create_chat">Messages directs</string>
-
-    <string name="create_room_title">Nouveau salon</string>
-    <string name="create_room_action_create">CRÉER</string>
-    <string name="create_room_name_hint">Nom du salon</string>
-    <string name="create_room_public_title">Public</string>
-    <string name="create_room_public_description">Tout le monde pourra rejoindre ce salon</string>
-    <string name="create_room_directory_title">Annuaire des salons</string>
-    <string name="create_room_directory_description">Publier ce salon dans l’annuaire des salons</string>
-
-    <string name="keys_backup_unable_to_get_trust_info">Une erreur est survenue lors de la récupération des informations de confiance</string>
-    <string name="keys_backup_unable_to_get_keys_backup_data">Une erreur est survenue lors de la récupération des données de sauvegarde de clés</string>
-
-    <string name="alpha_disclaimer_title">Bienvenue à la bêta !</string>
-    <string name="alpha_disclaimer_content_line_1">Comme RiotX est au début de son développement, il se peut que certaines fonctionnalités soient manquantes et que vous rencontriez quelques anomalies.</string>
-    <string name="alpha_disclaimer_content_line_2_gplay">La dernière liste de fonctionnalités est toujours dans la %1$s, et si vous rencontrez des anomalies, envoyez un rapport dans le menu en haut à gauche de l’accueil et nous les règlerons aussi vite que possible.</string>
-    <string name="alpha_disclaimer_content_line_2_gplay_colored_part">description du Play Store</string>
-    <string name="alpha_disclaimer_content_line_2_fdroid">Si vous rencontrez des anomalies, envoyez un rapport dans le menu en haut à gauche de l’accueil et nous les règlerons aussi vite que possible.</string>
-
-    <string name="import_e2e_keys_from_file">Importer les clés de chiffrement depuis le fichier « %1$s ».</string>
-
-    <string name="settings_sdk_version">Version du SDK de Matrix</string>
-    <string name="settings_other_third_party_notices">Licences tierces</string>
-    <string name="navigate_to_room_when_already_in_the_room">Vous êtes déjà en train de visualiser ce salon !</string>
-
-    <string name="quick_reactions">Réactions rapides</string>
-
-    <string name="settings_general_title">Général</string>
-    <string name="settings_preferences">Préférences</string>
-    <string name="settings_security_and_privacy">Sécurité &amp; vie privée</string>
-    <string name="settings_expert">Expert</string>
-    <string name="settings_push_rules">Règles de notification</string>
-    <string name="settings_push_rules_no_rules">Aucune règle de notification définie</string>
-    <string name="settings_push_gateway_no_pushers">Aucune passerelle de notification enregistrée</string>
-
-    <string name="push_gateway_item_app_id">app_id :</string>
-    <string name="push_gateway_item_push_key">push_key :</string>
-    <string name="push_gateway_item_app_display_name">app_display_name :</string>
-    <string name="push_gateway_item_device_name">device_name :</string>
-    <string name="push_gateway_item_url">URL :</string>
-    <string name="push_gateway_item_format">Format :</string>
-
-    <string name="preference_voice_and_video">Voix &amp; vidéo</string>
-    <string name="preference_root_help_about">Aide &amp; à propos</string>
-
-
-    <string name="settings_troubleshoot_test_token_registration_quick_fix">Inscrire le jeton</string>
-
-    <string name="send_suggestion">Faire une suggestion</string>
-    <string name="send_suggestion_content">Saisissez votre suggestion ci-dessous.</string>
-    <string name="send_suggestion_report_placeholder">Décrivez votre suggestion ici</string>
-    <string name="send_suggestion_sent">Merci, la suggestion a bien été envoyée</string>
-    <string name="send_suggestion_failed">Échec d’envoi de la suggestion (%s)</string>
-
-    <string name="settings_labs_show_hidden_events_in_timeline">Afficher les évènements cachés dans l’historique</string>
-
-    <string name="store_riotx_title">RiotX − Client Matrix nouvelle génération</string>
-    <string name="store_riotx_short_description">Un client pour Matrix plus rapide et plus léger utilisant les derniers frameworks Android</string>
-    <string name="store_riotx_full_description">RiotX est un nouveau client pour le protocole Matrix (Matrix.org) : un réseau ouvert pour des communications sécurisées et décentralisées. RiotX est une réécriture complète du client Android Riot, basée sur une réécriture complète du SDK Android de Matrix.
-\n
-\nMise en garde : Ceci est une version bêta. RiotX est actuellement en plein développement et a des limites et (peu, nous l’espérons) des anomalies. Tout commentaire est le bienvenu !
-\n
-\nRiotX prend en charge : • Se connecter à un compte existant • Créer de salons et rejoindre des salons publics • Accepter et refuser des invitations • Lister les salons des utilisateurs • Voir les informations des salons • Envoyer des messages texte • Envoyer des pièces jointes • Lire et écrire des messages dans les salons chiffrés • Chiffrement : sauvegarde des clés de chiffrement, vérification avancée des appareils, demande et réponse de partage de clé • Notifications • Thèmes clair, sombre et noir
-\n
-\nToutes les fonctionnalités de Riot ne sont pas encore implémentées dans RiotX. Principales fonctionnalités manquantes (et qui arrivent bientôt !) : • Création de compte • Réglages des salons (lister les membres du salon etc.) • Appels • Widgets • …</string>
-
-    <string name="bottom_action_people_x">Messages directs</string>
-
-    <string name="send_file_step_idle">Attente…</string>
-    <string name="send_file_step_encrypting_thumbnail">Chiffrement de la miniature…</string>
-    <string name="send_file_step_sending_thumbnail">Envoi de la miniature (%1$s / %2$s)</string>
-    <string name="send_file_step_encrypting_file">Chiffrement du fichier…</string>
-    <string name="send_file_step_sending_file">Envoi du fichier (%1$s / %2$s)</string>
-
-    <string name="downloading_file">Téléchargement du fichier %1$s…</string>
-    <string name="downloaded_file">Le fichier %1$s a été téléchargé !</string>
-
-    <string name="edited_suffix">(édité)</string>
-
-    <string name="riotx_no_registration_notice">%1$s pour créer un compte.</string>
-    <string name="riotx_no_registration_notice_colored_part">Utilisez l’ancienne application</string>
-
-
-    <string name="message_edits">Éditions de message</string>
-    <string name="no_message_edits_found">Aucune édition trouvée</string>
-
-    <string name="room_filtering_filter_hint">Filtrer les conversations…</string>
-    <string name="room_filtering_footer_title">Vous ne trouvez pas ce que vous cherchez \?</string>
-    <string name="room_filtering_footer_create_new_room">Créer un nouveau salon</string>
-    <string name="room_filtering_footer_create_new_direct_message">Envoyer un nouveau message direct</string>
-    <string name="room_filtering_footer_open_room_directory">Voir le répertoire des salons</string>
-
-    <string name="room_directory_search_hint">Nom ou identifiant (#exemple:matrix.org)</string>
-
-    <string name="labs_swipe_to_reply_in_timeline">Activer le balayement pour répondre dans l’historique</string>
-
-    <string name="link_copied_to_clipboard">Lien copié dans le presse-papiers</string>
-
+    <string name="keys_backup_setup_override_backup_prompt_description">On dirait que vous avez déjà configuré une sauvegarde de clé depuis une autre session. Voulez-vous la remplacer par celle que vous êtes en train de créer \?</string>
     <string name="settings_integration_manager">Gestionnaire d’intégrations</string>
 
     <string name="integration_manager_not_configured">Aucun gestionnaire d’intégrations n’est configuré.</string>
-    <string name="add_by_matrix_id">Ajouter par identifiant matrix</string>
-    <string name="creating_direct_room">Création du salon…</string>
-    <string name="direct_room_no_known_users">Aucun résultat trouvé, utilisez Ajouter par identifiant matrix pour chercher sur le serveur.</string>
-    <string name="direct_room_start_search">Entrez du texte pour avoir des résultats</string>
-    <string name="direct_room_filter_hint">Filtrer par nom d’utilisateur ou identifiant…</string>
-
-    <string name="joining_room">En train de rejoindre le salon…</string>
-
-    <string name="message_view_edit_history">Voir l’historique des éditions</string>
-
     <string name="review">Examiner</string>
     <string name="decline">Refuser</string>
 
@@ -1631,8 +1484,6 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="review_terms">Examiner les conditions</string>
     <string name="terms_description_for_identity_server">Être découvrable par les autres</string>
     <string name="terms_description_for_integration_manager">Utiliser des robots, passerelles, widgets et packs de stickers</string>
-
-    <string name="read_at">Lu à</string>
 
     <string name="none">Aucun</string>
     <string name="revoke">Révoquer</string>
@@ -1672,7 +1523,7 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="settings_discovery_category">Découverte</string>
     <string name="settings_discovery_manage">Gérer vos paramètres de découverte.</string>
     <string name="encryption_information_device_name_with_warning">Nom public (visible par les personnes avec qui vous communiquez)</string>
-    <string name="device_name_warning">Le nom public d’un appareil est visible par les personnes avec qui vous communiquez</string>
+    <string name="device_name_warning">Le nom public d’une session est visible par les personnes avec qui vous communiquez</string>
     <string name="identity_server_not_defined">Vous n’utilisez aucun serveur d’identité</string>
     <string name="identity_server_not_defined_for_password_reset">Aucun serveur d’identité n’est configuré, il est nécessaire pour réinitialiser votre mot de passe.</string>
 
@@ -1703,71 +1554,40 @@ Si vous n’avez pas configuré de nouvelle méthode de récupération, un attaq
     <string name="settings_agree_to_terms">Acceptez les conditions de service du serveur d’identité (%s) pour vous permettre d’être découvrable avec une adresse e-mail ou un numéro de téléphone.</string>
     <string name="resources_script">Latn</string>
 
-    <string name="labs_allow_extended_logging">Activer les journaux verbeux.</string>
-    <string name="labs_allow_extended_logging_summary">Les journaux verbeux aideront les développeurs en fournissant plus de journaux quand vous envoyez un rapport d’anomalie. Même si cette option est activée, l’application n’envoie pas le contenu des messages ou toute autre donnée personnelle.</string>
+    <string name="settings_add_3pid_confirm_password_title">Confirmez votre mot de passe</string>
+    <string name="settings_add_3pid_flow_not_supported">Vous ne pouvez pas faire cela depuis Riot mobile</string>
+    <string name="settings_add_3pid_authentication_needed">Une authentification est nécessaire</string>
 
 
-    <string name="error_terms_not_accepted">Réessayez quand vous aurez accepté les termes et conditions de votre serveur d’accueil.</string>
+    <string name="settings_integrations">Intégrations</string>
+    <string name="settings_integrations_summary">Utilisez un gestionnaire d’intégrations pour gérer les bots, les passerelles, les widgets et les packs de stickers.
+\nLes gestionnaires d’intégrations reçoivent des données de configuration et peuvent modifier des widgets, envoyer des invitations de salon et définir des rangs à votre place.</string>
+    <string name="settings_integration_allow">Autoriser les intégrations</string>
+    <string name="room_widget_activity_title">Widget</string>
+    <string name="room_widget_permission_title">Charger un widget</string>
+    <string name="room_widget_permission_added_by">Ce widget a été ajouté par :</string>
+    <string name="room_widget_permission_webview_shared_info_title">Son utilisation peut entraîner l’utilisation de cookies et le partage de données avec %s :</string>
+    <string name="room_widget_permission_shared_info_title">Son utilisation peut entraîner le partage de données avec %s :</string>
+    <string name="room_widget_failed_to_load">Échec de chargement du widget.
+\n%s</string>
+    <string name="room_widget_reload">Recharger le widget</string>
+    <string name="room_widget_open_in_browser">Ouvrir dans le navigateur</string>
+    <string name="room_widget_revoke_access">Révoquer l’accès pour moi</string>
 
-    <string name="error_network_timeout">On dirait que le serveur mette trop de temps à répondre. Ça peut être dû à une mauvaise connexion ou à une erreur avec nos serveurs. Réessayez plus tard.</string>
+    <string name="room_widget_permission_display_name">Votre nom affiché</string>
+    <string name="room_widget_permission_avatar_url">L’URL de votre avatar</string>
+    <string name="room_widget_permission_user_id">Votre identifiant utilisateur</string>
+    <string name="room_widget_permission_theme">Votre thème</string>
+    <string name="room_widget_permission_widget_id">L’identifiant du widget</string>
+    <string name="room_widget_permission_room_id">L’identifiant du salon</string>
 
-    <string name="send_attachment">Envoyer une pièce jointe</string>
 
-    <string name="a11y_open_drawer">Ouvrir le menu de navigation</string>
-    <string name="a11y_create_menu_open">Ouvrir le menu de création de salon</string>
-    <string name="a11y_create_menu_close">Fermer le menu de création de salon…</string>
-    <string name="a11y_create_direct_message">Créer une nouvelle conversation directe</string>
-    <string name="a11y_create_room">Créer un nouveau salon</string>
-    <string name="a11y_close_keys_backup_banner">Fermer la bannière de sauvegarde des clés</string>
-    <string name="a11y_show_password">Afficher le mot de passe</string>
-    <string name="a11y_hide_password">Masquer le mot de passe</string>
-    <string name="a11y_jump_to_bottom">Sauter en bas de page</string>
+    <string name="room_widget_resource_permission_title">Ce widget veut utiliser les ressources suivantes :</string>
+    <string name="room_widget_resource_grant_permission">Autoriser</string>
+    <string name="room_widget_resource_decline_permission">Tout bloquer</string>
+    <string name="room_widget_webview_access_camera">Utiliser la caméra</string>
+    <string name="room_widget_webview_access_microphone">Utiliser le micro</string>
+    <string name="room_widget_webview_read_protected_media">Lire des médias protégés par des DRM</string>
 
-    <string name="two_and_some_others_read">%1$s, %2$s et %3$d autres ont lu</string>
-    <string name="three_users_read">%1$s, %2$s et %3$s ont lu</string>
-    <string name="two_users_read">%1$s et %2$s ont lu</string>
-    <string name="one_user_read">%s a lu</string>
-    <plurals name="fallback_users_read">
-        <item quantity="one">1 utilisateur a lu</item>
-        <item quantity="other">%d utilisateurs ont lu</item>
-    </plurals>
-
-    <string name="error_file_too_big">Le fichier « %1$s » (%2$s) est trop gros pour être envoyé. La limite est %3$s.</string>
-
-    <string name="error_attachment">Une erreur est survenue pendant la récupération de la pièce jointe.</string>
-    <string name="attachment_type_file">Fichier</string>
-    <string name="attachment_type_contact">Contact</string>
-    <string name="attachment_type_camera">Appareil photo</string>
-    <string name="attachment_type_audio">Audio</string>
-    <string name="attachment_type_gallery">Galerie</string>
-    <string name="attachment_type_sticker">Sticker</string>
-    <string name="error_handling_incoming_share">Impossible de traiter les données de partage</string>
-
-    <string name="report_content_spam">C’est du pourriel</string>
-    <string name="report_content_inappropriate">C’est inapproprié</string>
-    <string name="report_content_custom">Signalement personnalisé</string>
-    <string name="report_content_custom_title">Signaler ce contenu</string>
-    <string name="report_content_custom_hint">Motif de signalement de ce contenu</string>
-    <string name="report_content_custom_submit">SIGNALER</string>
-    <string name="block_user">BLOQUER L’UTILISATEUR</string>
-
-    <string name="content_reported_title">Contenu signalé</string>
-    <string name="content_reported_content">Ce contenu a été signalé.
-\n
-\nSi vous ne voulez plus voir de contenu de cet utilisateur, vous pouvez le bloquer pour masquer ses messages</string>
-    <string name="content_reported_as_spam_title">Signalé comme pourriel</string>
-    <string name="content_reported_as_spam_content">Ce contenu a été signalé comme pourriel.
-\n
-\nSi vous ne voulez plus voir de contenu de cet utilisateur, vous pouvez le bloquer pour masquer ses messages</string>
-    <string name="content_reported_as_inappropriate_title">Signalé comme inapproprié</string>
-    <string name="content_reported_as_inappropriate_content">Ce contenu a été signalé comme inapproprié.
-\n
-\nSi vous ne voulez plus voir de contenu de cet utilisateur, vous pouvez le bloquer pour masquer ses messages</string>
-
-    <string name="permissions_rationale_msg_keys_backup_export">Riot a besoin de votre permission pour sauvegarder vos clés de chiffrement sur le disque.
-\n
-\nAutorisez l’accès dans le prochaine fenêtre pour pouvoir exporter vos clés manuellement.</string>
-
-    <string name="no_network_indicator">Il n’y a aucune connexion au réseau pour le moment</string>
-
+    <string name="login_error_no_homeserver_found">Ce n’est pas une adresse de serveur Matrix valide</string>
 </resources>

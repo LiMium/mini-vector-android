@@ -448,8 +448,8 @@
 
     <string name="devices_details_dialog_title">Информация за устройството</string>
     <string name="devices_details_id_title">ID</string>
-    <string name="devices_details_name_title">Име</string>
-    <string name="devices_details_device_name">Име на устройството</string>
+    <string name="devices_details_name_title">Публично име</string>
+    <string name="devices_details_device_name">Обнови публичното име</string>
     <string name="devices_details_last_seen_title">Последно видян</string>
     <string name="devices_details_last_seen_format">%1$s @ %2$s</string>
     <string name="devices_delete_dialog_text">Тази операция изискра допълнителна автентикация.
@@ -582,9 +582,9 @@
     <string name="encryption_information_decryption_error">Грешка при разшифроване</string>
 
     <string name="encryption_information_sender_device_information">Информация за устройството на подателя</string>
-    <string name="encryption_information_device_name">Име на устройство</string>
-    <string name="encryption_information_name">Име</string>
-    <string name="encryption_information_device_id">ID на устройство</string>
+    <string name="encryption_information_device_name">Публично име</string>
+    <string name="encryption_information_name">Публично име</string>
+    <string name="encryption_information_device_id">ID</string>
     <string name="encryption_information_device_key">Ключ на устройство</string>
     <string name="encryption_information_verification">Потвърждение</string>
     <string name="encryption_information_ed25519_fingerprint">Ed25519 отпечатък</string>
@@ -745,7 +745,7 @@
     <string name="settings_background_sync">Фонова синхронизация</string>
     <string name="settings_enable_background_sync">Включване на фонова синхронизация</string>
     <string name="settings_set_sync_timeout">Времето за синхронизация изтече</string>
-    <string name="settings_set_sync_delay">Време за чакане между всяка заявка</string>
+    <string name="settings_set_sync_delay">Време за чакане между синхронизации</string>
     <string name="settings_contacts_app_permission">Разрешение за достъп до контакти</string>
     <string name="settings_home_display">Начало</string>
     <string name="settings_vibrate_on_mention">Вибрация при споменаване на потребител</string>
@@ -1453,157 +1453,11 @@
     <string name="keys_backup_settings_checking_backup_state">Проверка на състоянието на резервното копие</string>
     <string name="invalid_or_expired_credentials">Бяхте изхвърлени от профила поради невалидни или изтекли данни за достъп.</string>
 
-    <string name="edit">Редактирай</string>
-    <string name="reply">Отговори</string>
-
     <string name="global_retry">Опитай пак</string>
-    <string name="room_list_empty">Влезте в стая за да започнете да използвате приложението.</string>
-    <string name="send_you_invite">Ви изпрати покана</string>
-    <string name="invited_by">Покана от %s</string>
-
-    <string name="room_list_catchup_empty_title">Наваксали сте с всичко!</string>
-    <string name="room_list_catchup_empty_body">Няма повече непрочетени съобщения</string>
-    <string name="room_list_catchup_welcome_title">Добре дошли вкъщи!</string>
-    <string name="room_list_catchup_welcome_body">Наваксайте с непрочетените съобщения тук</string>
-    <string name="room_list_people_empty_title">Кореспонденции</string>
-    <string name="room_list_people_empty_body">Вашите директни кореспонденции се показват тук</string>
-    <string name="room_list_rooms_empty_title">Стаи</string>
-    <string name="room_list_rooms_empty_body">Вашите стаи се показват тук</string>
-
-    <string name="title_activity_emoji_reaction_picker">Реакции</string>
-    <string name="reactions_agree">Съгласен съм</string>
-    <string name="reactions_like">Харесвам</string>
-    <string name="message_add_reaction">Добави реакция</string>
-    <string name="message_view_reaction">Виж реакциите</string>
-    <string name="reactions">Реакции</string>
-
-    <string name="event_redacted_by_user_reason">Събитие изтрито от потребителя</string>
-    <string name="event_redacted_by_admin_reason">Събитие модерирано от администратор на стаята</string>
-    <string name="last_edited_info_message">Последно редактирано от %1$s на %2$s</string>
-
-
-    <string name="malformed_message">Повредено събитие, не може да се покаже</string>
-    <string name="create_new_room">Създай нова стая</string>
-    <string name="error_no_network">Няма мрежа. Проверете интернет връзката си.</string>
-    <string name="action_change">Промени</string>
-    <string name="change_room_directory_network">Промени мрежата</string>
-    <string name="please_wait">Изчакайте…</string>
-    <string name="group_all_communities">Всички общности</string>
-
-    <string name="room_preview_no_preview">Тази стая не може да бъде прегледана</string>
-    <string name="room_preview_world_readable_room_not_supported_yet">Прегледа на стаи четими от цял свят все още не се поддържа от RiotX</string>
-
-    <string name="fab_menu_create_room">Стаи</string>
-    <string name="fab_menu_create_chat">Директни съобщения</string>
-
-    <string name="create_room_title">Нова стая</string>
-    <string name="create_room_action_create">СЪЗДАЙ</string>
-    <string name="create_room_name_hint">Име на стая</string>
-    <string name="create_room_public_title">Публична</string>
-    <string name="create_room_public_description">Всеки ще може да се присъедини към стаята</string>
-    <string name="create_room_directory_title">Директория със стаи</string>
-    <string name="create_room_directory_description">Публикувай стаята в директорията със стаи</string>
-
-    <string name="keys_backup_unable_to_get_trust_info">Случи се грешка при извличане на информацията за довереността</string>
-    <string name="keys_backup_unable_to_get_keys_backup_data">Случи се грешка при извличане на резервните данни за ключовете</string>
-
-    <string name="alpha_disclaimer_title">Добре дошли в beta версията!</string>
-    <string name="alpha_disclaimer_content_line_1">Докато RiotX е в ранен стадий на разработка някои функции може да липсват или да има бъгове.</string>
-    <string name="alpha_disclaimer_content_line_2_gplay_colored_part">Play Store описанието</string>
-    <string name="alpha_disclaimer_content_line_2_fdroid">Ако намерите бъгове, моля докладвайте ги от най-горното ляво меню на началния екран и ще ги разрешим възможно най-бързо.</string>
-
-    <string name="import_e2e_keys_from_file">Импортирай e2e ключове от файл \"%1$s\".</string>
-
-    <string name="settings_sdk_version">Matrix SDK версия</string>
-    <string name="navigate_to_room_when_already_in_the_room">Вече гледате тази стая!</string>
-
-    <string name="quick_reactions">Бързи реакции</string>
-
-    <string name="settings_general_title">Основни</string>
-    <string name="settings_preferences">Настройки</string>
-    <string name="settings_security_and_privacy">Сигурност и поверителност</string>
-    <string name="settings_expert">Експертни</string>
-    <string name="settings_push_rules">Правила за уведомление</string>
-    <string name="settings_push_rules_no_rules">Не са дефинирани правила за уведомление</string>
-    <string name="alpha_disclaimer_content_line_2_gplay">Списъкът с последни функции винаги е в %1$s. Ако намерите бъг, изпратете доклад за грешка от менюто горе в ляво, и ще го поправим възможно най-скоро.</string>
-    <string name="settings_other_third_party_notices">Други известия</string>
-    <string name="settings_push_gateway_no_pushers">Не са регистрирани адреси за push уведомления</string>
-
-    <string name="push_gateway_item_app_id">app_id:</string>
-    <string name="push_gateway_item_push_key">push_key:</string>
-    <string name="push_gateway_item_app_display_name">app_display_name:</string>
-    <string name="push_gateway_item_device_name">device_name:</string>
-    <string name="push_gateway_item_url">Адрес:</string>
-    <string name="push_gateway_item_format">Формат:</string>
-
-    <string name="preference_voice_and_video">Глас и Видео</string>
-    <string name="preference_root_help_about">Помощ и Относно</string>
-
-
-    <string name="settings_troubleshoot_test_token_registration_quick_fix">Регистрирай токен</string>
-
-    <string name="send_suggestion">Изпрати предложение</string>
-    <string name="send_suggestion_content">Напишете предложението си долу.</string>
-    <string name="send_suggestion_report_placeholder">Опишете предложението тук</string>
-    <string name="send_suggestion_sent">Благодаря! Предложението ви беше изпратено</string>
-    <string name="send_suggestion_failed">Предложението не беше изпратено (%s)</string>
-
-    <string name="settings_labs_show_hidden_events_in_timeline">Показвай скрити събития в чата</string>
-
-    <string name="store_riotx_title">RiotX - следващо поколение Matrix клиент</string>
-    <string name="store_riotx_short_description">По-бърз и по-лек Matrix клиент, използващ последните Android технологии</string>
-    <string name="store_riotx_full_description">RiotX в нов клиент за Matrix протокола (Matrix.org): отворена мрежа за сигурна, децентрализирана комуникация. RiotX е изцяло пренаписан Riot Android клиент, базиран на изцяло пренаписан Matrix Android SDK.
-\n
-\nЗабележка: Това е бета версия. RiotX в момента се разработва активно и все още има ограничения и (надяваме се не прекалено много) бъгове. Всякаква обратна връзка е добре дошла!
-\n
-\nRiotX поддържа: • Вход в съществуващ акаунт • Създаване на стая и влизане в публични стаи • Приемане и отхвърляне на покани • Показване на списък със стаите • Преглеждане на информация за стая • Изпращане на текстови съобщения • Изпращане на прикачени файлове • Четене и писане на съобщения в шифровани стаи • Шифроване: резервни копия на E2E ключове, потвърждение на устройства, заявяване и отговаряне на заявки за споделяне на ключове • Уведомления • Светла, Тъмна и Черна тема
-\n
-\nЗасега не всички функции на Riot са налични в RiotX. Основни липсващи (и скоро пристигащи!) функции са: • Създаване на нов профил • Настройки на стаи (показване на членове и т.н.) • Обаждания • Приспособления • …</string>
-
-    <string name="bottom_action_people_x">Директни съобщения</string>
-
-    <string name="send_file_step_idle">Изчакване…</string>
-    <string name="send_file_step_encrypting_thumbnail">Шифроване на малката снимка…</string>
-    <string name="send_file_step_sending_thumbnail">Изпращане на малка снимка (%1$s / %2$s)</string>
-    <string name="send_file_step_encrypting_file">Шифроване на файл…</string>
-    <string name="send_file_step_sending_file">Изпращане на файл (%1$s / %2$s)</string>
-
-    <string name="downloading_file">Изтегляне на файл %1$s…</string>
-    <string name="downloaded_file">Файлът %1$s беше изтеглен!</string>
-
-    <string name="edited_suffix">(редактирано)</string>
-
-    <string name="riotx_no_registration_notice">%1$s за да създадете профил.</string>
-    <string name="riotx_no_registration_notice_colored_part">Използвай старото приложение</string>
-
-
-    <string name="message_edits">Редакции на съобщението</string>
-    <string name="no_message_edits_found">Не са открити редакции</string>
-
-    <string name="room_filtering_filter_hint">Филтриране на чатове…</string>
-    <string name="room_filtering_footer_title">Не можете да намерите това, което търсите\?</string>
-    <string name="room_filtering_footer_create_new_room">Създай нова стая</string>
-    <string name="room_filtering_footer_create_new_direct_message">Изпрати ново директно съобщение</string>
-    <string name="room_filtering_footer_open_room_directory">Виж директорията със стаи</string>
-
-    <string name="room_directory_search_hint">Име или ID (#example:matrix.org)</string>
-
-    <string name="labs_swipe_to_reply_in_timeline">Активирай отговаряне от списъка с чатове при приплъзване</string>
-
-    <string name="link_copied_to_clipboard">Връзката беше копирана</string>
 
     <string name="settings_integration_manager">Мениджър на интеграции</string>
 
     <string name="integration_manager_not_configured">Не е конфигуриран мениджър на интеграции.</string>
-    <string name="add_by_matrix_id">Добави по Matrix идентификатор</string>
-    <string name="creating_direct_room">Създаване на стая…</string>
-    <string name="direct_room_no_known_users">Не са намерени резултати, използва \"Добави по Matrix идентификатор\" за търсене на сървъра.</string>
-    <string name="direct_room_start_search">Започнете да пишете, за да получите резултати</string>
-    <string name="direct_room_filter_hint">Филтрирай по потребител или ID…</string>
-
-    <string name="joining_room">Присъединяване в стая…</string>
-
-    <string name="message_view_edit_history">Виж историята на редакциите</string>
 
     <string name="review">Прегледай</string>
     <string name="decline">Откажи</string>
@@ -1620,6 +1474,110 @@
     <string name="terms_description_for_identity_server">Бъдете откриваеми от други</string>
     <string name="terms_description_for_integration_manager">Използвайте ботове, връзки с други мрежи, приспособления и стикери</string>
 
-    <string name="read_at">Прочетете на</string>
+    <string name="resources_script">Cyrl</string>
+
+    <string name="none">Нищо</string>
+    <string name="revoke">Оттегли</string>
+    <string name="disconnect">Прекъсни</string>
+    <string name="people_no_identity_server">Не е настроен сървър за самоличност.</string>
+
+    <string name="call_failed_no_ice_title">Обаждането се провали поради грешно настроен сървър</string>
+    <string name="call_failed_no_ice_description">Попитайте администратора на сървъра (%1$s) да конфигурира TURN сървър за да може разговорите да работят надеждно.
+\n
+\nКато алтернатива, също може да използвате публичния сървър %2$s, но това няма да е толкова надеждно, а и ще сподели IP адреса ви със сървъра. Може да управлявате това в Настройки.</string>
+    <string name="call_failed_no_ice_use_alt">Опитай с %s</string>
+    <string name="call_failed_dont_ask_again">Не питай пак</string>
+
+    <string name="auth_add_email_message_2">Настройте имейл за възстановяване на профила, а после по желание и за да бъдете откриваеми от познати.</string>
+    <string name="auth_add_phone_message_2">Настройте телефон за възстановяване на профила, а после по желание и за да бъдете откриваеми от познати.</string>
+    <string name="auth_add_email_phone_message_2">Настройте имейл за възстановяване на профила. По-късно използвайте имейл или телефонен номер за да бъдете откривани от хора, които ви познават.</string>
+    <string name="auth_add_email_and_phone_message_2">Настройте имейл за възстановяване на профила. По-късно използвайте имейл или телефонен номер за да бъдете откривани от хора, които ви познават.</string>
+    <string name="login_error_homeserver_not_found">Неуспешна връзка със сървъра на този адрес, моля проверете</string>
+    <string name="settings_call_ringtone_use_default_stun">Позволи използването на резервен сървър за свързване на обаждания</string>
+    <string name="settings_call_ringtone_use_default_stun_sum">Ще използва %s за асистиращ сървър, когато вашия сървър не предлага такъв (IP адресът ви ще бъде споделен по време на обаждане)</string>
+    <string name="invite_no_identity_server_error">Добавете сървър за самоличност в настройки за да извършите това действие.</string>
+    <string name="settings_background_fdroid_sync_mode">Режим на фонова синхронизация (експериментално)</string>
+    <string name="settings_background_fdroid_sync_mode_battery">Пестящ батерия</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Riot ще синхронизира във фонов режим по начин, който пести ограничените ресурси на устройството (батерия).
+\nВ зависимост от състоянието на ресурсите, синхронизацията може да бъде отложена от операционната система.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time">Целящ висока интерактивност</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Riot ще синхронизира във фонов режим на определен интервал (конфигурируемо).
+\nТова ще повлияе на използването на антената и батерията. Ще се показва перманентна нотификация, че Riot слуша за събития.</string>
+    <string name="settings_background_fdroid_sync_mode_disabled">Без фонова синхронизация</string>
+    <string name="settings_background_fdroid_sync_mode_disabled_description">Няма да бъдете уведомени за входящи съобщения, когато приложението е във фонов режим.</string>
+    <string name="settings_background_sync_update_error">Неуспешно обновяване на настройките.</string>
+
+
+    <string name="settings_set_workmanager_delay">Предпочитан интервал за синхронизация</string>
+    <string name="settings_set_workmanager_delay_summary">%s
+\nСинхронизацията може да бъде отложена, в зависимост от ресурсите (батерия) или състоянието на устройството (заспиване).</string>
+    <string name="settings_discovery_category">Откриване</string>
+    <string name="settings_discovery_manage">Управлявайте настройките на откриваемостта.</string>
+    <string name="encryption_information_device_name_with_warning">Публично име (видимо за хора, с които общувате)</string>
+    <string name="device_name_warning">Публичното име на устройството е видимо за хората, с които общувате</string>
+    <string name="identity_server_not_defined">Не използвате сървър за самоличност</string>
+    <string name="identity_server_not_defined_for_password_reset">Не е настроен сървър за самоличност. Необходим е за възстановяване на паролата.</string>
+
+    <string name="error_user_already_logged_in">Изглежда се опитвате да се свържете с друг сървър. Искате ли да излезете от профила\?</string>
+
+    <string name="identity_server">Сървър за самоличност</string>
+    <string name="disconnect_identity_server">Прекъсни сървъра за самоличност</string>
+    <string name="add_identity_server">Настрой сървър за самоличност</string>
+    <string name="change_identity_server">Промени сървъра за самоличност</string>
+    <string name="settings_discovery_identity_server_info">В момента използвате %1$s за да откривате и да бъдете открити от съществуващи ваши контакти.</string>
+    <string name="settings_discovery_identity_server_info_none">В момента не използвате сървър за самоличност. Настройте такъв по-долу, за да откривате и да бъдете открити от съществуващи ваши контакти.</string>
+    <string name="settings_discovery_emails_title">Откриваеми имейл адреси</string>
+    <string name="settings_discovery_no_mails">Ще се появят настройки за откриваемост след като добавите имейл.</string>
+    <string name="settings_discovery_no_msisdn">Ще се появят настройки за откриваемост след като добавите телефонен номер.</string>
+    <string name="settings_discovery_disconnect_identity_server_info">Прекъсването на връзката със сървъра за самоличност означава, че няма да бъдете откриваеми от други потребители и няма да можете да каните други по имейл или телефон.</string>
+    <string name="settings_discovery_msisdn_title">Откриваеми телефонни номера</string>
+    <string name="settings_discovery_confirm_mail">Изпратихме имейл за потвърждение на %s. Проверете имейла и кликнете връзката за потвърждение</string>
+    <string name="settings_discovery_mail_pending">Изчакване</string>
+
+    <string name="settings_discovery_enter_identity_server">Въведете нов сървър за самоличност</string>
+    <string name="settings_discovery_bad_identity_server">Неуспешна връзка със сървъра за самоличност</string>
+    <string name="settings_discovery_please_enter_server">Въведете адреса на сървъра за самоличност</string>
+    <string name="settings_discovery_no_terms_title">Сървъра за самоличност няма условия за ползване</string>
+    <string name="settings_discovery_no_terms">Избрания сървър за самоличност няма условия за ползване на услугата. Продължете само ако вярвате на собственика на услугата</string>
+    <string name="settings_text_message_sent">Беше изпратено текстово съобщение на %s. Въведете съдържащият се код за потвърждение.</string>
+
+    <string name="settings_discovery_disconnect_with_bound_pid">В момента споделяте имейл адреси или телефонни номера със сървър за самоличност %1$s. Ще трябва да се свържете наново с %2$s за да спрете да ги споделяте.</string>
+    <string name="settings_agree_to_terms">Съгласете се с условията за ползване на услугата на сървъра за самоличност (%s) за да бъдете откриваеми по имейл адрес или телефонен номер.</string>
+
+    <string name="login_error_no_homeserver_found">Това не е валиден адрес на Matrix сървър</string>
+    <string name="settings_add_3pid_confirm_password_title">Потвърдете паролата</string>
+    <string name="settings_add_3pid_flow_not_supported">Не може да направите това от мобилно приложение на Riot</string>
+    <string name="settings_add_3pid_authentication_needed">Нужна е автентикация</string>
+
+
+    <string name="settings_integrations">Интеграции</string>
+    <string name="settings_integrations_summary">Използвайте мениджър на интеграции за да управлявате ботове, връзки с други мрежи, приспособления и стикери.
+\nМениджърите на интеграции получават конфигурационни данни, могат да променят приспособления, да изпращат покани за стаи и да настройват нива на достъп от ваше име.</string>
+    <string name="settings_integration_allow">Разреши интеграции</string>
+    <string name="room_widget_activity_title">Приспособление</string>
+    <string name="room_widget_permission_title">Зареди приспособление</string>
+    <string name="room_widget_permission_added_by">Приспособлението е добавено от:</string>
+    <string name="room_widget_permission_webview_shared_info_title">Използването му може да настрой бисквитки или да сподели данни с %s:</string>
+    <string name="room_widget_permission_shared_info_title">Използването му може да сподели данни с %s:</string>
+    <string name="room_widget_failed_to_load">Неуспешно зареждане на приспособление.
+\n%s</string>
+    <string name="room_widget_reload">Презареди приспособлението</string>
+    <string name="room_widget_open_in_browser">Отвори в браузър</string>
+    <string name="room_widget_revoke_access">Премахни достъпа ми</string>
+
+    <string name="room_widget_permission_display_name">Вашето име</string>
+    <string name="room_widget_permission_avatar_url">Вашият адрес на снимка</string>
+    <string name="room_widget_permission_user_id">Вашият потребителски идентификатор</string>
+    <string name="room_widget_permission_theme">Вашата тема</string>
+    <string name="room_widget_permission_widget_id">Идентификатор на приспособление</string>
+    <string name="room_widget_permission_room_id">Идентификатор на стая</string>
+
+
+    <string name="room_widget_resource_permission_title">Приспособлението иска да използва следните ресурси:</string>
+    <string name="room_widget_resource_grant_permission">Разреши</string>
+    <string name="room_widget_resource_decline_permission">Блокирай всички</string>
+    <string name="room_widget_webview_access_camera">Използване на камерата</string>
+    <string name="room_widget_webview_access_microphone">Използване на микрофона</string>
+    <string name="room_widget_webview_read_protected_media">Четене на DRM-защитена медия</string>
 
 </resources>
