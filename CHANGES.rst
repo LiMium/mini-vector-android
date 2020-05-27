@@ -5,6 +5,10 @@ MatrixSdk 🚀:
  - Upgrade MatrixSdk to version 0.9.35.
  - Changelog: https://github.com/matrix-org/matrix-android-sdk/releases/tag/v0.9.35
 
+miniVector:
+ - Remove jQuery library, since it had a security vulnerability. It's functionality was replaced
+   with a single line of code. See https://github.com/LiMium/mini-vector-android/pull/35
+
 Changes in Riot 0.9.11 (2020-05-13)
 ===================================================
 
