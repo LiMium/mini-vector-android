@@ -1,6 +1,10 @@
 miniVector
 =========
 
+> As of Aug 2020, the development of this fork has halted because
+> the upstream code base has changed drastically, and there is
+> not enough developer interest to make the transition here.
+
  This is a minified Android Matrix client derived from the official client. It
  requires fewer permissions and compiles to a much smaller package.
 
@@ -12,7 +16,7 @@ miniVector
 
 ### Links
 
-* [PlayStore](https://play.google.com/store/apps/details?id=com.lavadip.miniVector)
+* [PlayStore](https://play.google.com/store/apps/details?id=com.lavadip.miniVector) (discontinued)
 * [F-Droid version](https://f-droid.org/packages/com.lavadip.miniVector/) built from `limified-fdroid` branch
 * Matrix chat room: [#miniVectorAndroid:matrix.org](https://matrix.to/#/#miniVectorAndroid:matrix.org)
 
