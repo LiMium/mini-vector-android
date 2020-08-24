@@ -16,7 +16,7 @@ miniVector
 
 ### Links
 
-* [PlayStore](https://play.google.com/store/apps/details?id=com.lavadip.miniVector) (discontinued)
+* [PlayStore](https://play.google.com/store/apps/details?id=com.lavadip.miniVector)
 * [F-Droid version](https://f-droid.org/packages/com.lavadip.miniVector/) built from `limified-fdroid` branch
 * Matrix chat room: [#miniVectorAndroid:matrix.org](https://matrix.to/#/#miniVectorAndroid:matrix.org)
 
